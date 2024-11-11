@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa hàng trong bảng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa một hàng trong bảng HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;tr&gt;</div></choice>
+            <choice correct="false"><div>&lt;td&gt;</div></choice>
+            <choice correct="false"><div>&lt;th&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;tr&gt; được sử dụng để định nghĩa một hàng trong bảng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

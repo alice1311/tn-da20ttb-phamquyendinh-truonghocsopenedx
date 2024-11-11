@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo liên kết trong HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo liên kết trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;a&gt;</div></choice>
+            <choice correct="false"><div>&lt;link&gt;</div></choice>
+            <choice correct="false"><div>&lt;url&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;a&gt; được sử dụng để tạo liên kết đến các tài liệu khác.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

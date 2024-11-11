@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa ô trong bảng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa một ô trong bảng HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;td&gt;</div></choice>
+            <choice correct="false"><div>&lt;th&gt;</div></choice>
+            <choice correct="false"><div>&lt;tr&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;td&gt; được sử dụng để định nghĩa một ô trong bảng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

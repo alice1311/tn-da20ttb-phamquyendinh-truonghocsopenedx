@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo khối nội dung dạng section" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối nội dung dạng section?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;section&gt;</div></choice>
+            <choice correct="false"><div>&lt;div&gt;</div></choice>
+            <choice correct="false"><div>&lt;article&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;section&gt; được sử dụng để tạo một khối nội dung theo ngữ nghĩa.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

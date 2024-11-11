@@ -1,0 +1,27 @@
+<library url_name="library" xblock-family="xblock.v1" display_name="Ngân hàng câu hỏi " org="TraVinhUniversity" library="110">
+  <problem url_name="problem_1"/>
+  <problem url_name="problem_2"/>
+  <problem url_name="problem_3"/>
+  <problem url_name="problem_4"/>
+  <problem url_name="problem_5"/>
+  <problem url_name="problem_6"/>
+  <problem url_name="problem_7"/>
+  <problem url_name="problem_8"/>
+  <problem url_name="problem_9"/>
+  <problem url_name="problem_10"/>
+  <problem url_name="problem_11"/>
+  <problem url_name="problem_12"/>
+  <problem url_name="problem_13"/>
+  <problem url_name="problem_14"/>
+  <problem url_name="problem_15"/>
+  <problem url_name="problem_16"/>
+  <problem url_name="problem_17"/>
+  <problem url_name="problem_18"/>
+  <problem url_name="problem_19"/>
+  <problem url_name="problem_20"/>
+  <problem url_name="problem_21"/>
+  <problem url_name="problem_22"/>
+  <problem url_name="problem_23"/>
+  <problem url_name="problem_24"/>
+  <problem url_name="problem_25"/>
+</library>

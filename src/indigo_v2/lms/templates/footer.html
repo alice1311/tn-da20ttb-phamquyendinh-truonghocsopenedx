@@ -1,0 +1,183 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  from datetime import datetime
+  from django.urls import reverse
+  from django.utils.translation import gettext as _
+  from lms.djangoapps.branding.api import get_footer
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<% icp_license_info = getattr(settings, 'ICP_LICENSE_INFO', {})%>
+<%namespace name='static' file='static_content.html'/>
+<!-- NEW IN INDIGO update footer -->
+% if uses_bootstrap:
+<div class="wrapper wrapper-footer">
+  <footer id="footer" class="tutor-container"
+    ## When rendering the footer through the branding API,
+    ## the direction may not be set on the parent element,
+    ## so we set it here.
+    % if bidi:
+      dir=${bidi}
+    % endif
+  >
+  <div class="footer-top">
+    <div class="powered-area">
+      ## Please leave this link and use one of the logos provided
+      ## The OpenEdX link may be hidden when this view is served
+      ## through an API to partner sites (such as marketing sites or blogs),
+      ## which are not technically powered by OpenEdX.
+      % if not hide_openedx_link:
+      <ul class="logo-list">
+        <!-- <li>Powered by:</li>
+        <li>
+          <a href="https://docs.tutor.edly.io" rel="noopener" target="_blank">
+            <img src="${static.url('images/tutor-logo.png')}" alt="Runs on Tutor" width="57" />
+          </a>
+        </li> -->
+        <li>
+          <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
+            <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="79" />
+          </a>
+        </li>
+        <li>
+          <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
+            <img src="${static.url('images/logo.png')}" alt="${footer['openedx_link']['title']}" width="79" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    {% if INDIGO_FOOTER_NAV_LINKS %}
+    <nav class="nav-colophon" aria-label="${_('About')}">
+      <ol>
+          {% for link in INDIGO_FOOTER_NAV_LINKS %}
+          <li>
+            <a href="{{ link['url'] }}">{{ link['title'] }}</a>
+          </li>
+          {% endfor %}
+      </ol>
+    </nav>
+    {% endif %}
+   
+  </div>
+  <span class="copyright-site">Copyrights ©${datetime.now().year}. All Rights Reserved.</span>
+  % endif
+    <div class="colophon">
+     
+      % if context.get('include_language_selector', footer_language_selector_is_enabled()):
+          <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
+      % endif
+
+      ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+        <p class="copyright">${footer['copyright']}
+            % if icp_license_info.get('icp_license'):
+              ${u" | {text}".format(text=icp_license_info.get('text'))}
+              <a href="${icp_license_info.get('icp_license_link', '#')}">
+                  ${u" {icp}".format(icp=icp_license_info.get('icp_license'))}
+              </a>
+            % endif
+        </p>
+    </div>
+  </footer>
+</div>
+% else:
+<!-- NEW IN INDIGO update footer -->
+  <div class="wrapper wrapper-footer">
+    <footer id="footer" class="tutor-container"
+      ## When rendering the footer through the branding API,
+      ## the direction may not be set on the parent element,
+      ## so we set it here.
+      % if bidi:
+        dir=${bidi}
+      % endif
+    >
+    <div class="footer-info">
+      <div class="footer-top">
+        <div class="powered-area">
+          ## Please leave this link and use one of the logos provided
+          ## The OpenEdX link may be hidden when this view is served
+          ## through an API to partner sites (such as marketing sites or blogs),
+          ## which are not technically powered by OpenEdX.
+          % if not hide_openedx_link:
+          <ul class="logo-list">
+            <!-- <li>Powered by:</li>
+            <li>
+              <a href="https://docs.tutor.edly.io" rel="noopener" target="_blank">
+                <img src="${static.url('images/tutor-logo.png')}" alt="Runs on Tutor" width="57" />
+              </a>
+            </li> -->
+            <li>
+              <img src="https://i.ibb.co/GdDv7fK/logo-set.png" alt="logo-set" border="0">
+            </li>
+            <!-- <li>
+             
+            </li> -->
+          </ul>
+        </div>
+        <!-- {% if INDIGO_FOOTER_NAV_LINKS %}
+        <nav class="nav-colophon" aria-label="${_('About')}">
+          <ol>
+              {% for link in INDIGO_FOOTER_NAV_LINKS %}
+              <li>
+                <a href="{{ link['url'] }}">{{ link['title'] }}</a>
+              </li>
+              {% endfor %}
+          </ol>
+        </nav>
+        {% endif %} -->
+        
+      </div>
+      
+      % endif
+        <div class="colophon">
+        
+          % if context.get('include_language_selector', footer_language_selector_is_enabled()):
+              <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
+          % endif
+
+          ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+            <p class="copyright">${footer['copyright']}
+                % if icp_license_info.get('icp_license'):
+                  ${u" | {text}".format(text=icp_license_info.get('text'))}
+                  <a href="${icp_license_info.get('icp_license_link', '#')}">
+                      ${u" {icp}".format(icp=icp_license_info.get('icp_license'))}
+                  </a>
+                % endif
+            </p>
+        </div>
+        <div class="footer-label"><p>Terms of use</p></div>
+        <div class="footer-label"><p>Instructions for use</p></div>
+        <div class="footer-label"><p>About us</p></div>
+        <div class="footer-page">
+          <a href="https://www.facebook.com/TraVinhUniversity.TVU" target="_blank"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" /></svg></a>          
+          <a href="https://www.youtube.com/@aiHocTraVinhTVU" target="_blank">
+            <svg  xmlns="http://www.w3.org/2000/svg "  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+          </a>
+          <a target="_blank" href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Tr%C3%A0+Vinh/@9.9230735,106.3474763,18.46z/data=!4m6!3m5!1s0x31a0175ea296facb:0x55ded92e29068221!8m2!3d9.9234516!4d106.3465193!16s%2Fm%2F0vb3nkd?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+          </a>
+          <a target="_blank" href="https://tuyensinh.tvu.edu.vn/">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" /></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-powerby">
+        <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
+          <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="79" />
+        </a>
+        <span class="copyright-site">Copyrights ©${datetime.now().year}. All Rights Reserved.</span>
+      </div>                                                                                                                                                                                                                                                                                                                                                                       
+    </footer>
+  </div>
+% endif
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif

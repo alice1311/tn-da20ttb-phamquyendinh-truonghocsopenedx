@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo danh sách có thứ tự" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo danh sách có thứ tự trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;ol&gt;</div></choice>
+            <choice correct="false"><div>&lt;ul&gt;</div></choice>
+            <choice correct="false"><div>&lt;li&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;ol&gt; được sử dụng để tạo danh sách có thứ tự.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

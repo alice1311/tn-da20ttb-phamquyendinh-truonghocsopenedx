@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ khối văn bản nghiêng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối văn bản nghiêng?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;em&gt;</div></choice>
+            <choice correct="false"><div>&lt;i&gt;</div></choice>
+            <choice correct="false"><div>&lt;strong&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;em&gt; được sử dụng để tạo một khối văn bản nghiêng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

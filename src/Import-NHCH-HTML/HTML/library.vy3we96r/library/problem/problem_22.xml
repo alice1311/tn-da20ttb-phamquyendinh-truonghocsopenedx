@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo khối nội dung dạng article" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối nội dung dạng article?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;article&gt;</div></choice>
+            <choice correct="false"><div>&lt;div&gt;</div></choice>
+            <choice correct="false"><div>&lt;section&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;article&gt; được sử dụng để định nghĩa một phần nội dung độc lập.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

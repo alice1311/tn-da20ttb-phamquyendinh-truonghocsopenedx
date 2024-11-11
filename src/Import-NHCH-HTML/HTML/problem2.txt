@@ -1,0 +1,350 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa tiêu đề trong HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa tiêu đề trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;title&gt;</div></choice>
+            <choice correct="false"><div>&lt;head&gt;</div></choice>
+            <choice correct="false"><div>&lt;header&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;title&gt; được sử dụng để định nghĩa tiêu đề của tài liệu HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo liên kết trong HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo liên kết trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;a&gt;</div></choice>
+            <choice correct="false"><div>&lt;link&gt;</div></choice>
+            <choice correct="false"><div>&lt;url&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;a&gt; được sử dụng để tạo liên kết đến các tài liệu khác.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa đoạn văn" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa một đoạn văn bản trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;p&gt;</div></choice>
+            <choice correct="false"><div>&lt;div&gt;</div></choice>
+            <choice correct="false"><div>&lt;span&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;p&gt; được sử dụng để định nghĩa đoạn văn trong HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo danh sách không thứ tự" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo danh sách không thứ tự trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;ul&gt;</div></choice>
+            <choice correct="false"><div>&lt;ol&gt;</div></choice>
+            <choice correct="false"><div>&lt;list&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;ul&gt; được sử dụng để tạo danh sách không thứ tự.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo danh sách có thứ tự" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo danh sách có thứ tự trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;ol&gt;</div></choice>
+            <choice correct="false"><div>&lt;ul&gt;</div></choice>
+            <choice correct="false"><div>&lt;li&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;ol&gt; được sử dụng để tạo danh sách có thứ tự.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa khối mã" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa một khối mã trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;pre&gt;</div></choice>
+            <choice correct="false"><div>&lt;code&gt;</div></choice>
+            <choice correct="false"><div>&lt;script&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;pre&gt; được sử dụng để định nghĩa một khối mã với định dạng cố định.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ nhúng video" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để nhúng video vào trang HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;video&gt;</div></choice>
+            <choice correct="false"><div>&lt;media&gt;</div></choice>
+            <choice correct="false"><div>&lt;embed&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;video&gt; được sử dụng để nhúng video vào trang HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo bảng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo bảng trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;table&gt;</div></choice>
+            <choice correct="false"><div>&lt;grid&gt;</div></choice>
+            <choice correct="false"><div>&lt;chart&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;table&gt; được sử dụng để tạo bảng trong HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa ô trong bảng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa một ô trong bảng HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;td&gt;</div></choice>
+            <choice correct="false"><div>&lt;th&gt;</div></choice>
+            <choice correct="false"><div>&lt;tr&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;td&gt; được sử dụng để định nghĩa một ô trong bảng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa hàng trong bảng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa một hàng trong bảng HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;tr&gt;</div></choice>
+            <choice correct="false"><div>&lt;td&gt;</div></choice>
+            <choice correct="false"><div>&lt;th&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;tr&gt; được sử dụng để định nghĩa một hàng trong bảng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ định nghĩa tiêu đề cột" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa tiêu đề của một cột trong bảng HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;th&gt;</div></choice>
+            <choice correct="false"><div>&lt;td&gt;</div></choice>
+            <choice correct="false"><div>&lt;caption&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;th&gt; được sử dụng để định nghĩa tiêu đề của một cột trong bảng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ nhúng hình ảnh" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để nhúng hình ảnh vào trang HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;img&gt;</div></choice>
+            <choice correct="false"><div>&lt;picture&gt;</div></choice>
+            <choice correct="false"><div>&lt;image&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;img&gt; được sử dụng để nhúng hình ảnh vào trang HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo ô nhập liệu" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một ô nhập liệu trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;input&gt;</div></choice>
+            <choice correct="false"><div>&lt;form&gt;</div></choice>
+            <choice correct="false"><div>&lt;textarea&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;input&gt; được sử dụng để tạo một ô nhập liệu.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ vùng văn bản lớn" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một vùng văn bản nhập liệu lớn hơn trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;textarea&gt;</div></choice>
+            <choice correct="false"><div>&lt;input&gt;</div></choice>
+            <choice correct="false"><div>&lt;form&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;textarea&gt; được sử dụng để tạo một vùng văn bản nhập liệu lớn hơn.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo ô chọn" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một ô chọn trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;select&gt;</div></choice>
+            <choice correct="false"><div>&lt;input&gt;</div></choice>
+            <choice correct="false"><div>&lt;option&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;select&gt; được sử dụng để tạo một ô chọn.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ lựa chọn trong ô chọn" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một lựa chọn trong ô chọn?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;option&gt;</div></choice>
+            <choice correct="false"><div>&lt;select&gt;</div></choice>
+            <choice correct="false"><div>&lt;input&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;option&gt; được sử dụng để tạo một lựa chọn trong ô chọn.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ khối văn bản nổi bật" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối văn bản nổi bật?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;strong&gt;</div></choice>
+            <choice correct="false"><div>&lt;b&gt;</div></choice>
+            <choice correct="false"><div>&lt;em&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;strong&gt; được sử dụng để tạo một khối văn bản nổi bật.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ khối văn bản nghiêng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối văn bản nghiêng?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;em&gt;</div></choice>
+            <choice correct="false"><div>&lt;i&gt;</div></choice>
+            <choice correct="false"><div>&lt;strong&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;em&gt; được sử dụng để tạo một khối văn bản nghiêng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ chèn khối mã HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để chèn một khối mã HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;code&gt;</div></choice>
+            <choice correct="false"><div>&lt;script&gt;</div></choice>
+            <choice correct="false"><div>&lt;pre&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;code&gt; được sử dụng để chèn một khối mã HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo khối nội dung" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo khối nội dung dạng div?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;div&gt;</div></choice>
+            <choice correct="false"><div>&lt;span&gt;</div></choice>
+            <choice correct="false"><div>&lt;section&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;div&gt; được sử dụng để tạo khối nội dung.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo khối nội dung dạng section" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối nội dung dạng section?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;section&gt;</div></choice>
+            <choice correct="false"><div>&lt;div&gt;</div></choice>
+            <choice correct="false"><div>&lt;article&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;section&gt; được sử dụng để tạo một khối nội dung theo ngữ nghĩa.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ tạo khối nội dung dạng article" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối nội dung dạng article?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;article&gt;</div></choice>
+            <choice correct="false"><div>&lt;div&gt;</div></choice>
+            <choice correct="false"><div>&lt;section&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;article&gt; được sử dụng để định nghĩa một phần nội dung độc lập.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Thẻ chú thích cho bảng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để thêm chú thích cho bảng trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;caption&gt;</div></choice>
+            <choice correct="false"><div>&lt;label&gt;</div></choice>
+            <choice correct="false"><div>&lt;note&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;caption&gt; được sử dụng để thêm chú thích cho bảng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Phần đầu của tài liệu HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa phần đầu của tài liệu HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;head&gt;</div></choice>
+            <choice correct="false"><div>&lt;body&gt;</div></choice>
+            <choice correct="false"><div>&lt;meta&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;head&gt; được sử dụng để định nghĩa phần đầu của tài liệu HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+
+<problem attempts_before_showanswer_button="0" display_name="Phần thân của tài liệu HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa phần thân của tài liệu HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;body&gt;</div></choice>
+            <choice correct="false"><div>&lt;head&gt;</div></choice>
+            <choice correct="false"><div>&lt;footer&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;body&gt; được sử dụng để định nghĩa phần thân của tài liệu HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
+

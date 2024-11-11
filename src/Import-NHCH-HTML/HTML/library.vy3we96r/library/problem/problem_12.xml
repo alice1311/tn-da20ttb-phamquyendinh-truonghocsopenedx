@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ nhúng hình ảnh" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để nhúng hình ảnh vào trang HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;img&gt;</div></choice>
+            <choice correct="false"><div>&lt;picture&gt;</div></choice>
+            <choice correct="false"><div>&lt;image&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;img&gt; được sử dụng để nhúng hình ảnh vào trang HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

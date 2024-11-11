@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ nhúng video" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để nhúng video vào trang HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;video&gt;</div></choice>
+            <choice correct="false"><div>&lt;media&gt;</div></choice>
+            <choice correct="false"><div>&lt;embed&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;video&gt; được sử dụng để nhúng video vào trang HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

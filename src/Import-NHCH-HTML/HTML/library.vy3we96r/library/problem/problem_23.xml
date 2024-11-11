@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ chú thích cho bảng" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để thêm chú thích cho bảng trong HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;caption&gt;</div></choice>
+            <choice correct="false"><div>&lt;label&gt;</div></choice>
+            <choice correct="false"><div>&lt;note&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;caption&gt; được sử dụng để thêm chú thích cho bảng.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

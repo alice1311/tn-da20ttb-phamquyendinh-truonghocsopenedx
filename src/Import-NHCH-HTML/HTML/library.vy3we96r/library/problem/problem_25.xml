@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Phần thân của tài liệu HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để định nghĩa phần thân của tài liệu HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;body&gt;</div></choice>
+            <choice correct="false"><div>&lt;head&gt;</div></choice>
+            <choice correct="false"><div>&lt;footer&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;body&gt; được sử dụng để định nghĩa phần thân của tài liệu HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

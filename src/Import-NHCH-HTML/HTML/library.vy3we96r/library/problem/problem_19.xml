@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ chèn khối mã HTML" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để chèn một khối mã HTML?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;code&gt;</div></choice>
+            <choice correct="false"><div>&lt;script&gt;</div></choice>
+            <choice correct="false"><div>&lt;pre&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;code&gt; được sử dụng để chèn một khối mã HTML.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

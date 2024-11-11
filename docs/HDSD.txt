@@ -1,0 +1,2 @@
+-Cài đặt OpenEdx theo hướng dẫn trên file báo cáo.
+- Run lệnh "tutor local start" để chạy demo.

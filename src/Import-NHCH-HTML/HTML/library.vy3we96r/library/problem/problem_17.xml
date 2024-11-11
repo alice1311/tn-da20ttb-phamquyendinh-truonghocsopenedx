@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ khối văn bản nổi bật" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một khối văn bản nổi bật?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;strong&gt;</div></choice>
+            <choice correct="false"><div>&lt;b&gt;</div></choice>
+            <choice correct="false"><div>&lt;em&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;strong&gt; được sử dụng để tạo một khối văn bản nổi bật.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>

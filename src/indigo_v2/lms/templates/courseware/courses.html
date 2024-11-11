@@ -1,0 +1,197 @@
+<%page expression_filter="h"/>
+<%!
+  import json
+  from django.utils.translation import gettext as _
+  from openedx.core.djangolib.js_utils import js_escaped_string, dump_js_escaped_json
+%>
+<%inherit file="../main.html" />
+<%
+  course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
+%>
+
+<%namespace name='static' file='../static_content.html'/>
+<%block name="js_extra">
+  <script type="text/javascript" src="${static.url('common/js/vendor/bootstrap.bundle.js')}"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-k6RqeWeci5ZR/Lv4MR0sA0FfG4vqlm2Xf3cl5iVldK7F5w3T/A2C4Hc8QK/8N+5ZT0h+ZmHo3wD1Xwz2Vgrw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</%block>
+% if course_discovery_enabled:
+<%block name="header_extras">
+  % for template_name in ["course_card", "filter_bar", "filter", "facet", "facet_option"]:
+  <script type="text/template" id="${template_name}-tpl">
+      <%static:include path="discovery/${template_name}.underscore" />
+  </script>
+  % endfor
+  <%static:require_module module_name="js/discovery/discovery_factory" class_name="DiscoveryFactory">
+    DiscoveryFactory(
+      ${course_discovery_meanings | n, dump_js_escaped_json},
+      getParameterByName('search_query'),
+      "${user_language | n, js_escaped_string}",
+      "${user_timezone | n, js_escaped_string}"
+    );
+  </%static:require_module>
+</%block>
+% endif
+
+<%block name="pagetitle">${_("Courses")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    
+    <section class="find-courses">
+      
+      <section class="courses-container">
+        
+        <!-- NEW IN INDIGO Heading was added. -->
+        <div class="course-heading-area">
+          <!-- <h2>Unlock Your Potential: Discover New Courses Today!</h2>
+          <p>Explore a world of knowledge and enhance your skills with our diverse range of courses</p> -->
+          <!-- <img src="https://i.pinimg.com/564x/da/72/d9/da72d9004f30dbefd428309696f8cefb.jpg"/> 
+            
+
+
+
+
+<img src="https://i.ibb.co/CwbkJfh/5.png" alt="5" border="0">
+
+
+
+
+
+
+
+
+
+
+-->
+          <div class="slider">
+            <div class="list">
+              <div class="item">
+                <img src="https://i.ibb.co/zrJctJ2/KTCN.png" alt="KTCN" border="0">
+              </div>
+              <div class="item">
+                <img src="https://i.ibb.co/N7MgGN3/TKWS.png" alt="TKWS" border="0">
+              </div>
+              <div class="item">
+                <img src="https://i.ibb.co/vL5kV8q/LTHDT.png" alt="LTHDT" border="0">
+              </div>
+              <div class="item">
+                <img src="https://i.ibb.co/HXqWK0D/TTNT.png" alt="TTNT" border="0">
+              </div>
+              <div class="item">
+                <img src="https://i.ibb.co/VjyN8VZ/DTDM.png" alt="DTDM" border="0">
+              </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </div>
+        <!-- NEW IN INDIGO Modified search bar and filters. -->
+        % if course_discovery_enabled:
+          <div class="saerch-bar-discover">
+            <div class="dropdown filter-block">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 3C2 2.44772 2.44772 2 3 2H13C13.5523 2 14 2.44772 14 3V4.25245C14 4.51767 13.8946 4.77202 13.7071 4.95956L9.62623 9.04044C9.43869 9.22798 9.33333 9.48233 9.33333 9.74755V11.3333L6.66667 14V9.74755C6.66667 9.48233 6.56131 9.22798 6.37377 9.04044L2.29289 4.95956C2.10536 4.77202 2 4.51767 2 4.25245V3Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Filters</span>
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.7071 7.29289L9.99999 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68341 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z" fill="#9CA3AF"/>
+                  </svg>
+              </a>
+              <div class="dropdown-menu search-facets-lists" aria-labelledby="dropdownMenuLink">
+                  <aside aria-label="${_('Refine Your Search')}" class="search-facets phone-menu">
+                    <h2 class="header-search-facets">${_('Refine Your Search')}</h2>
+                    <section class="search-facets-lists">
+                    </section>
+                  </aside>/
+              </div>
+            </div>
+            <div class="discover-search">
+            <div id="discovery-form" role="search" aria-label="course" class="wrapper-search-context">
+              <form class="wrapper-search-input">
+                <label for="discovery-input" class="sr">${_('Search for a course')}</label>
+                <div class="button-holder">
+                  <button type="submit" class="button postfix discovery-submit" title="${_('Search')}">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                  </button>
+                </div>
+                <div class="input-holder">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4ZM2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 9.29583 13.5892 10.4957 12.8907 11.4765L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L11.4765 12.8907C10.4957 13.5892 9.29583 14 8 14C4.68629 14 2 11.3137 2 8Z" fill="#9CA3AF"/>
+                    </svg>
+                  <input id="discovery-input" class="discovery-input" placeholder="${_('Explore course')}" type="text"/>
+                </div>
+              </form>
+              <div id="discovery-message" class="search-status-label"></div>
+            </div>
+            <div id="filter-bar" class="filters hide-phone is-collapsed">>
+            </div>
+          </div>
+        </div>
+      % endif
+       
+
+        <div class="course-holder courses${'' if course_discovery_enabled else ' no-course-discovery'}" role="region" aria-label="${_('List of Courses')}">
+          <ul class="courses-listing courses-list">
+            %for course in courses:
+            <li class="courses-listing-item">
+              <%include file="../course.html" args="course=course" />
+            </li>
+            %endfor
+          </ul>
+        </div>
+      </section>
+    </section>
+</main>
+<script>
+
+let slider = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let dots = document.querySelectorAll('.slider .dots li');
+
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function(){
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+}
+let refreshInterval = setInterval(()=> {next.click()}, 3000);
+function reloadSlider(){
+    slider.style.left = -items[active].offsetLeft + 'px';
+    // 
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(()=> {next.click()}, 3000);
+
+    
+}
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', ()=>{
+         active = key;
+         reloadSlider();
+    })
+})
+window.onresize = function(event) {
+    reloadSlider();
+};
+
+
+</script>

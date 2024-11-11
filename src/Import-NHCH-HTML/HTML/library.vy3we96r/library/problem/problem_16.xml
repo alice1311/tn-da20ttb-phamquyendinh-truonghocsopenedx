@@ -1,0 +1,13 @@
+<problem attempts_before_showanswer_button="0" display_name="Thẻ lựa chọn trong ô chọn" max_attempts="3" showanswer="after_all_attempts_or_correct" weight="1.0">
+    <multiplechoiceresponse>
+        <div>Thẻ nào được sử dụng để tạo một lựa chọn trong ô chọn?</div>
+        <choicegroup>
+            <choice correct="true"><div>&lt;option&gt;</div></choice>
+            <choice correct="false"><div>&lt;select&gt;</div></choice>
+            <choice correct="false"><div>&lt;input&gt;</div></choice>
+        </choicegroup>
+        <solution>
+            <div class="detailed-solution"><p>Thẻ &lt;option&gt; được sử dụng để tạo một lựa chọn trong ô chọn.</p></div>
+        </solution>
+    </multiplechoiceresponse>
+</problem>
